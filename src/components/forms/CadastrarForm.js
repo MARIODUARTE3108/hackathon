@@ -7,8 +7,6 @@ import passwordValidation from '../../validations/password-validation';
 import textValidation from '../../validations/text-validation';
 
 export default function CadastrarForm(){
-
-
     const [mensagemSucesso, setMensagemSucesso] = useState('');
     const [mensagemErro, setMensagemErro] = useState('');
 
