@@ -36,6 +36,8 @@ export default function DetalharNoticia({ detalharNoticia }) {
                             <th className='font-weight-bold'>Descrição da Notícia:</th>
                             <td className='pl-2'>{Noticia.descricao}</td>
                         </tr>
+                        <th className='font-weight-bold'></th>
+                            <td className='pl-2'>{Noticia.imagem && <img src={Noticia.imagem} style={{ width: '450px' }} alt="Imagem" />}</td>
                         <tr>
                             <th className='font-weight-bold'>Capítulo da Notícia:</th>
                             <td className='pl-2'>{Noticia.chapeu}</td>
@@ -47,6 +49,8 @@ export default function DetalharNoticia({ detalharNoticia }) {
                         <tr>
                             <th className='font-weight-bold'>Autor da Notícia:</th>
                             <td className='pl-2'>{Noticia.autor}</td>
+                        </tr>
+                        <tr>
                         </tr>
                     </tbody>
                 </table>
