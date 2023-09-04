@@ -40,7 +40,6 @@ export default function CadastrarForm(){
         )
         .catch(      // retorno erro
             e => {
-                console.log('erro',e.response.data.errors.IFormFile[0])
                 switch (e.response.status) {
 
                     case 400:
@@ -55,9 +54,6 @@ export default function CadastrarForm(){
                           }
                           if (e.response.data.errors.Email) {
                             setMensagemErro(e.response.data.errors.Email[0]);
-                          }
-                          if (e.response.data.errors.IFormFile) {
-                            setMensagemErro(e.response.data.errors.IFormFile[0]);
                           }
                         break;
                     
